@@ -1,0 +1,20 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputText {
+    margin-bottom: 14px;
+}
+
+.inputNum {
+    margin-bottom: 12px;
+}
+
+.btnAddContact {
+    display: flex;
+    width: 88px;
+    height: 24px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
