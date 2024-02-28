@@ -1,20 +1,25 @@
 .form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  outline: auto;
+   padding: 10px;
+   margin-bottom: 14px;
 }
 
 .inputText {
-    margin-bottom: 14px;
+   width: 240px;
+  margin-bottom: 14px;
 }
 
 .inputNum {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .btnAddContact {
-    display: flex;
-    width: 88px;
-    height: 24px;
-    margin-left: 40px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 88px;
+  height: 24px;
+  margin-bottom: 26px;
 }
