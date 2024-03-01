@@ -6,12 +6,17 @@ import css from "../ContactForm/ContactForm.module.css";
 export const ContactForm = ({onAdd}) => {
     const [submitting, setSubmitting] = useState(false);
 
-    const validationSchema = Yup.object({
-        name: Yup.string()
-            .required('Name is required'),
-        number: Yup.string()
-            .required('Number is required'),
-    });
+const validationSchema = Yup.object({
+    name: Yup.string()
+        .required('Name is required')
+        .min(2, 'Name must be at least 2 characters')
+        .max(50, 'Name must be at most 50 characters'),
+    number: Yup.string()
+        .required('Number is required')
+        .min(6, 'Number must be at least 6 characters')
+        .max(15, 'Number must be at most 15 characters'),
+});
+
 
     const formik = useFormik({
         initialValues: {
